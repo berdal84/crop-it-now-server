@@ -40,10 +40,19 @@
 	<build>
 		<plugins>
 			<plugin>
+	            <artifactId>maven-compiler-plugin</artifactId>
+	            <version>3.6.1</version>
+	            <configuration>
+	                <fork>true</fork>
+	                <executable>E:\Program Files\Java\jdk1.8.0_221\bin\javac.exe</executable>
+	            </configuration>
+        	</plugin>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+
 	</build>
 
 </project>
